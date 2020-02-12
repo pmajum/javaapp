@@ -50,6 +50,17 @@ public class AppTest
             fail("\"message\" is not \"Hello World!\"");
         }
     }
+    
+    @Test
+    public void testAppMainException()
+    {
+        App.main(null);
+        try {
+            assertEquals("Hello World bb!" + System.getProperty("line.separator"), outContent.toString());
+        } catch (AssertionError e) {
+            fail("\"message\" is not \"Hello World!\"");
+        }
+    }
 
     @After
     public void cleanUpStreams() {
