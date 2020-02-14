@@ -51,7 +51,7 @@ public class AppTest
         }
     }
     
-   /* @Test
+   @Test
     public void testAppMainException()
     {
         App.main(null);
@@ -62,7 +62,7 @@ public class AppTest
         }
     }
     
-    @Test
+    /* @Test
     public void testAppMainExceptionAnother()
     {
         App.main(null);
